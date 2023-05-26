@@ -1,0 +1,11 @@
+﻿@model List<PostViewComponentModel>
+
+
+<h2>Comments: @Model.Count()</h2>
+
+    @foreach (var post in Model)
+    {
+        <h3>@post.name</h3>
+        <div>@post.email</div>
+        <p>@post.body</p>
+    }

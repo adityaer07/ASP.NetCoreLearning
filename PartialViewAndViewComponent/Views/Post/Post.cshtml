@@ -1,0 +1,10 @@
+﻿@model PostModel
+<div>
+    <h1>@Model.Title</h1>
+
+    <div>By: @Model.Author</div>
+
+    <p>@Model.Body</p>
+
+    @await Component.InvokeAsync("Post", 1);
+</div>
